@@ -12,6 +12,11 @@ const banners = [
   "images/banners/banner4.jpg",
   "images/banners/banner5.jpg",
 ];
+// Preload all banner images
+banners.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
 
 let currentBanner = 0;
 let bannerTimer;
