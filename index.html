@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RAJAN MOTORS | Explore Your Next Ride</title>
+    <link rel="stylesheet" href="style.css" />
+    <header class="navbar">
+
+    <a href="#home" class="brand">
+        <img src="images/hero-logo.png" alt="HERO MotoCorp Logo" class="brand-logo" style="height: 50px;">
+        <span class="brand-text" style="color: black;">RAJAN MOTORS</span>
+    </a>
+
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#technology">Technology</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+  </head>
+
+  <body>
+    
+    <div class="hero-stage">
+
+    <section class="hero" id="home">
+      
+
+      <div class="hero-indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <!-- VEHICLE SHOWCASE -->
+    <section class="vehicles" id="vehicles">
+      <!-- Section Heading -->
+      <div class="section-heading">
+        <p class="section-tagline">FIND YOUR NEXT RIDE</p>
+        <h2>EXPLORE OUR RANGE</h2>
+        <p class="section-description">
+          Discover the machine that matches your journey.
+        </p>
+      </div>
+
+      <!-- Vehicle Categories -->
+      <div class="vehicle-categories">
+        <button class="category-card active" data-category="motorcycles">
+          <span class="category-number">01</span>
+          <span class="category-name">MOTORCYCLES</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="scooters">
+          <span class="category-number">02</span>
+          <span class="category-name">SCOOTERS</span>
+          <span class="category-arrow">↗</span>
+        </button>
+
+        <button class="category-card" data-category="ev">
+          <span class="category-number">03</span>
+          <span class="category-name">ELECTRIC VEHICLES</span>
+          <span class="category-arrow">↗</span>
+        </button>
+      </div>
+
+      <!-- Main Vehicle Display -->
+      <div class="vehicle-display">
+        <div class="vehicle-image" id="vehicle-image">
+          <span class="image-placeholder">VEHICLE IMAGE</span>
+        </div>
+
+        <div class="vehicle-info">
+          <p class="vehicle-label">DISCOVER THE RANGE</p>
+
+          <h3 id="vehicle-name">Explore Motorcycles</h3>
+
+          <p id="vehicle-description">
+            Find a motorcycle that fits your style and everyday journey.
+          </p>
+
+          <div class="vehicle-specs">
+            <div class="spec-item">
+              <span class="spec-label">ENGINE</span>
+              <span class="spec-value" id="vehicle-engine">—</span>
+            </div>
+
+            <div class="spec-item">
+              <span class="spec-label">PERFORMANCE</span>
+              <span class="spec-value" id="vehicle-performance">—</span>
+            </div>
+          </div>
+
+          <button class="vehicle-enquiry">ENQUIRE NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="vehicle-controls">
+        <span id="vehicle-counter">01 / 01</span>
+
+        <div class="vehicle-arrows">
+          <button id="vehicle-prev" aria-label="Previous vehicle">←</button>
+          <button id="vehicle-next" aria-label="Next vehicle">→</button>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- NEW ARRIVALS SECTION -->
+    <section class="new-arrivals" id="new-arrivals">
+      <div class="arrivals-header">
+        <div>
+          <p class="arrivals-tagline">FRESH ON THE ROAD</p>
+          <h2>NEW ARRIVALS<span>.</span></h2>
+          <p class="arrivals-description">
+            Discover the latest additions to the HERO family.
+          </p>
+        </div>
+
+        <div class="arrivals-label">LATEST COLLECTION</div>
+      </div>
+
+      <!-- Horizontal scrolling track -->
+      <div class="arrivals-slider">
+        <div class="arrivals-track">
+          <article class="arrival-card">
+            <div class="arrival-image">
+              <span>IMAGE 01</span>
+              <span class="arrival-number">01</span>
+            </div>
+
+            <div class="arrival-info">
+              <p>NEW GENERATION</p>
+              <h3>Coming Soon</h3>
+              <span>EXPLORE THE MODEL ↗</span>
+            </div>
+          </article>
+
+          <article class="arrival-card">
+            <div class="arrival-image">
+              <span>IMAGE 02</span>
+              <span class="arrival-number">02</span>
+            </div>
+
+            <div class="arrival-info">
+              <p>BUILT FOR EVERYDAY</p>
+              <h3>Coming Soon</h3>
+              <span>EXPLORE THE MODEL ↗</span>
+            </div>
+          </article>
+
+          <article class="arrival-card">
+            <div class="arrival-image">
+              <span>IMAGE 03</span>
+              <span class="arrival-number">03</span>
+            </div>
+
+            <div class="arrival-info">
+              <p>THE NEXT CHAPTER</p>
+              <h3>Coming Soon</h3>
+              <span>EXPLORE THE MODEL ↗</span>
+            </div>
+          </article>
+
+          <article class="arrival-card">
+            <div class="arrival-image">
+              <span>IMAGE 04</span>
+              <span class="arrival-number">04</span>
+            </div>
+
+            <div class="arrival-info">
+              <p>MADE TO MOVE</p>
+              <h3>Coming Soon</h3>
+              <span>EXPLORE THE MODEL ↗</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- HERO TECHNOLOGY SECTION -->
+    <section class="technology" id="technology">
+      <!-- Section Heading -->
+      <div class="technology-header">
+        <p class="technology-tagline">ENGINEERING THE FUTURE</p>
+
+        <h2>
+          INNOVATION IN<br />
+          <span>EVERY RIDE.</span>
+        </h2>
+
+        <p class="technology-description">
+          Discover the engineering and innovation behind modern mobility.
+        </p>
+      </div>
+
+      <!-- Technology Panels -->
+      <div class="technology-panels">
+        <!-- Panel 1 -->
+        <article class="technology-panel active">
+          <button class="technology-toggle" type="button" aria-expanded="true">
+            <span class="technology-number">01</span>
+            <span class="technology-title">ENGINEERING</span>
+            <span class="technology-icon">+</span>
+          </button>
+
+          <div class="technology-content">
+            <div class="technology-content-inner">
+              <p class="technology-label">POWER MEETS PRECISION</p>
+
+              <h3>Designed Around Every Journey.</h3>
+
+              <p>
+                Explore the engineering behind motorcycle performance, everyday
+                usability and riding comfort.
+              </p>
+
+              <span class="technology-note"> TECHNOLOGY OVERVIEW </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 2 -->
+        <article class="technology-panel">
+          <button class="technology-t oggle" type="button" aria-expanded="false">
+            <span class="technology-number">02</span>
+            <span class="technology-title">SAFETY</span>
+            <span class="technology-icon">+</span>
+          </button>
+
+          <div class="technology-content">
+            <div class="technology-content-inner">
+              <p class="technology-label">CONFIDENCE ON THE ROAD</p>
+
+              <h3>Safety Comes First.</h3>
+
+              <p>
+                Learn about the safety technologies and rider-focused features
+                available across different models.
+              </p>
+
+              <span class="technology-note"> SAFETY OVERVIEW </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 3 -->
+        <article class="technology-panel">
+          <button class="technology-toggle" type="button" aria-expanded="false">
+            <span class="technology-number">03</span>
+            <span class="technology-title">CONNECTIVITY</span>
+            <span class="technology-icon">+</span>
+          </button>
+
+          <div class="technology-content">
+            <div class="technology-content-inner">
+              <p class="technology-label">CONNECTED MOBILITY</p>
+
+              <h3>Stay Connected.</h3>
+
+              <p>
+                Discover connected features and digital capabilities offered on
+                compatible motorcycles.
+              </p>
+
+              <span class="technology-note"> CONNECTIVITY OVERVIEW </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Panel 4 -->
+        <article class="technology-panel">
+          <button class="technology-toggle" type="button" aria-expanded="false">
+            <span class="technology-number">04</span>
+            <span class="technology-title">ELECTRIC MOBILITY</span>
+            <span class="technology-icon">+</span>
+          </button>
+
+          <div class="technology-content">
+            <div class="technology-content-inner">
+              <p class="technology-label">A NEW WAY FORWARD</p>
+
+              <h3>Explore Electric Mobility.</h3>
+
+              <p>
+                Discover electric vehicle technology, charging concepts and
+                everyday electric mobility.
+              </p>
+
+              <span class="technology-note"> ELECTRIC MOBILITY OVERVIEW </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- ACHIEVEMENTS SECTION -->
+<section class="achievements" id="achievements">
+
+    <div class="achievements-header">
+        <p class="achievements-tagline">OUR JOURNEY</p>
+
+        <h2>
+            BUILT ON TRUST.<br>
+            <span>DRIVEN BY EXCELLENCE.</span>
+        </h2>
+
+        <p class="achievements-description">
+            Our commitment to quality service, customer satisfaction
+            and the riding community.
+        </p>
+    </div>
+
+    <!-- Achievement Highlights -->
+    <div class="achievement-stats">
+
+        <div class="stat-card">
+            <span class="stat-number">01</span>
+            <h3>Customer First</h3>
+            <p>Dedicated to helping customers find their next ride.</p>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-number">02</span>
+            <h3>Service Support</h3>
+            <p>Supporting customers throughout their ownership journey.</p>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-number">03</span>
+            <h3>Local Presence</h3>
+            <p>Serving customers through our dealership network.</p>
+        </div>
+
+    </div>
+
+    <!-- Awards and Recognition -->
+    <div class="awards-heading">
+        <div>
+            <p class="achievements-tagline">RECOGNITION</p>
+            <h3>Awards & Milestones</h3>
+        </div>
+
+        <span class="awards-caption">OUR PROGRESS, OUR PRIDE</span>
+    </div>
+
+    <div class="awards-grid">
+
+        <article class="award-card">
+            <div class="award-icon">✦</div>
+            <p class="award-year">MILESTONE 01</p>
+            <h4>Dealership Milestones</h4>
+            <p>
+                A place to showcase verified dealership milestones
+                and accomplishments.
+            </p>
+        </article>
+
+        <article class="award-card">
+            <div class="award-icon">✧</div>
+            <p class="award-year">RECOGNITION 02</p>
+            <h4>Industry Recognition</h4>
+            <p>
+                A place to highlight officially confirmed awards
+                and recognitions.
+            </p>
+        </article>
+
+        <article class="award-card">
+            <div class="award-icon">◇</div>
+            <p class="award-year">COMMUNITY 03</p>
+            <h4>Customer Community</h4>
+            <p>
+                A place to share genuine customer initiatives
+                and community activities.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+    <!-- ABOUT AND CONTACT SECTION -->
+<section class="about-contact" id="contact">
+
+    <!-- About the Dealership -->
+    <div class="about-content">
+
+        <div class="about-heading">
+            <p class="about-tagline">YOUR JOURNEY STARTS HERE</p>
+
+            <h2>
+                MEET<br>
+                <span>RAJAN MOTORS.</span>
+            </h2>
+        </div>
+
+        <div class="about-description">
+            <p>
+                Welcome to RAJAN MOTORS, your destination for exploring
+                the HERO motorcycle and scooter range.
+            </p>
+
+            <p>
+                We're focused on helping customers discover suitable
+                vehicles and find the dealership support they need
+                throughout their riding journey.
+            </p>
+
+            <a href="#vehicles" class="about-button">
+                EXPLORE OUR RANGE <span>↗</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Branches -->
+    <div class="branches-section">
+
+        <div class="branches-heading">
+            <div>
+                <p class="about-tagline">FIND US NEAR YOU</p>
+                <h3>OUR BRANCHES<span>.</span></h3>
+            </div>
+
+            <p class="branches-note">
+                FOUR LOCATIONS. ONE COMMITMENT.
+            </p>
+        </div>
+
+        <div class="branches-grid">
+
+            <article class="branch-card">
+                <span class="branch-number">01</span>
+                <h4>RAJAN MOTORS</h4>
+                <p>Branch location to be added.</p>
+                <span class="branch-status">LOCATION DETAILS COMING SOON</span>
+            </article>
+
+            <article class="branch-card">
+                <span class="branch-number">02</span>
+                <h4>RAJAN MOTORS</h4>
+                <p>Branch location to be added.</p>
+                <span class="branch-status">LOCATION DETAILS COMING SOON</span>
+            </article>
+
+            <article class="branch-card">
+                <span class="branch-number">03</span>
+                <h4>RAJAN MOTORS</h4>
+                <p>Branch location to be added.</p>
+                <span class="branch-status">LOCATION DETAILS COMING SOON</span>
+            </article>
+
+            <article class="branch-card">
+                <span class="branch-number">04</span>
+                <h4>RAJAN MOTORS</h4>
+                <p>Branch location to be added.</p>
+                <span class="branch-status">LOCATION DETAILS COMING SOON</span>
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-panel">
+
+        <div class="contact-copy">
+            <p class="about-tagline">LET'S CONNECT</p>
+
+            <h3>READY FOR YOUR<br>NEXT RIDE?</h3>
+
+            <p>
+                Have a question about a vehicle or want to visit
+                a branch? Get in touch with RAJAN MOTORS.
+            </p>
+        </div>
+
+        <div class="contact-actions">
+
+            <a href="#vehicles" class="contact-button">
+                EXPLORE VEHICLES <span>↗</span>
+            </a>
+
+            <a href="mailto:" class="contact-button contact-button-outline">
+                EMAIL US <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <a href="#home" class="footer-brand">HERO</a>
+
+    <p>
+        RAJAN MOTORS
+        <span> | </span>
+        Your Journey, Our Commitment.
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#technology">Technology</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="footer-copyright">
+        © <span id="current-year"></span> RAJAN MOTORS. All rights reserved.
+    </p>
+
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
